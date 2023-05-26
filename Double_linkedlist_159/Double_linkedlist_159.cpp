@@ -81,7 +81,7 @@ bool DoubleLinkedList::search(int rollNo, Node** previous, Node** current) {
 	while (*current != NULL && rollNo != (*current)->noMhs) {	//step 1.c
 		*previous = *current;	//step 1.d
 		*current = (*current)->next;	//step 1.e
-	}
+	} 
 	return (*current != NULL);
 }
 
