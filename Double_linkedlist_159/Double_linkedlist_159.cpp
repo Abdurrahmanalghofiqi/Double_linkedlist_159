@@ -19,7 +19,7 @@ public:
 	bool search(int eollNo, Node** previous, Node** current);
 	bool deleteNode(int rollNo);
 	bool listEmpty();
-	void traversa();
+	void traverse();
 	void revtraverse();
 	void hapus();
 	void searchData();
@@ -105,7 +105,7 @@ bool DoubleLinkedList::listEmpty() {
 	return (START == NULL);
 }
 
-void DoubleLinkedList::revtraverse() {
+void DoubleLinkedList::traverse() {
 	if (listEmpty())
 		cout << "\nList is empty" << endl;
 	else {
@@ -205,7 +205,6 @@ int main() {
 			default:
 				cout << "\nInvalid option" << endl;
 				break;
-
 			}
 		}
 		catch (exception& e) {
