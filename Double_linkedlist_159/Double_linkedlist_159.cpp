@@ -126,7 +126,7 @@ void DoubleLinkedList::revtraverse() {
 	else {
 		cout << "\nRecords in ascending order of roll number are:" << endl;
 		Node* currentNode = START;
-		while (currentNode->next != NULL) {
+		while (currentNode->next != NULL)
 			currentNode = currentNode->next;
 
 		while (currentNode != NULL) {
@@ -150,4 +150,10 @@ void DoubleLinkedList::hapus() {
 	else
 		cout << "Record with roll number " << rollNo << " deleted" << endl;
 }
+void DoubleLinkedList::searchData() {
+	if (listEmpty() == true) {
+		cout << "\nList is empty" << endl;
 
+	}
+	Node* prev
+}
