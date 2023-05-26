@@ -144,7 +144,7 @@ void DoubleLinkedList::hapus() {
 	cout << "\nEnter the roll number of the student whose record is to be deleted: ";
 	int rollNo;
 	cin >> rollNo;
-	cout >> endl;
+	cout << endl;
 	if (DoubleLinkedList::deleteNode(rollNo) == false)
 		cout << "record not found" << endl;
 	else
@@ -155,5 +155,16 @@ void DoubleLinkedList::searchData() {
 		cout << "\nList is empty" << endl;
 
 	}
-	Node* prev
+	Node* prev, * curr;
+	prev = curr = NULL;
+	cout << "\nEnter the roll number of the student whose record you want to search: ";
+	int num;
+	cin >> num;
+	if (DoubleLinkedList::search(num, &prev, &curr) == false)
+		cout << "\nRecord not found" << endl;
+	else {
+		cout << "\nRecord found" << endl;
+		cout << "\nRoll number: " << curr->noMhs << endl;
+		cout << "\nName:" << curr->name << endl;
+	}
 }
