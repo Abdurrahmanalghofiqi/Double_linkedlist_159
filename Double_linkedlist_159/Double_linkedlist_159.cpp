@@ -115,7 +115,7 @@ void DoubleLinkedList::traverse() {
 			cout << currentNode->noMhs << "" << currentNode->name << endl;
 			currentNode = currentNode->next;
 		}
-	}
+	} 
 }
 
 void DoubleLinkedList::revtraverse() {
